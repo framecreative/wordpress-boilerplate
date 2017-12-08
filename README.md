@@ -127,4 +127,33 @@ This will kick off the watch / rebuild process, and start a proxied browsersync 
 Visit `http://localhost:3000` to access the site and use browser sync
 
 
+## Homestead and WP CLI
+
+If you have homestead installed globally then you can take advantage of WP CLI's aliases in a very easy manner
+
+Run the following command to generate a SSH config
+
+```bash
+homestead ssh-config --host homestead.dev >> ~/.ssh/config
+```
+
+If you have changed your Homestead install's `folders` property in Homestead.yaml, then please edit the @dev alias in wp-cli.yml to relect the correct path
+
+If you have yet to install WP CLI on homestead then this will take care of it..
+
+```bash
+# One liner for global Homestead users, I gotchu fam.
+homestead ssh -- -t 'curl -o wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp && sudo mv wp /usr/local/bin/wp'
+```
+
+Then you can execute WP CLI commands from your machine using the aliases
+
+```bash
+# Good test example
+wp @dev plugin list
+```
+
+
+
+
 
