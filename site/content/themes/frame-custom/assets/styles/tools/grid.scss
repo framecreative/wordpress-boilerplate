@@ -1,0 +1,57 @@
+
+$grid-gutter: 1rem !default;
+$grid-legacy-support: false !default;
+
+@mixin grid-wrap( $gutter:$grid-gutter ) {
+	margin-left: -$gutter;
+	display: flex;
+	flex-wrap: wrap;
+
+	@if $grid-legacy-support {
+		letter-spacing: -0.31em;
+	}
+}
+
+@mixin grid-item( $proportion:1, $gutter:$grid-gutter ) {
+	width: $proportion * 100%;
+	padding-left: $gutter;
+	overflow: hidden;
+
+	@if $grid-legacy-support {
+		display: inline-block;
+		letter-spacing: normal;
+		vertical-align: top;
+	}
+}
+
+@mixin grid-gallery( $rowCount, $gutter:$grid-gutter, $vertical-gutter:null ) {
+
+	@if $vertical-gutter == null {
+		$vertical-gutter: $gutter;
+	}
+
+	@include grid-wrap( $gutter );
+
+	> * {
+		@include grid-item( 1/$rowCount, $gutter );
+	}
+
+	> *:nth-child( -n + #{$rowCount} ) {
+		margin-top: 0;
+	}
+
+	> *:nth-child( n + #{$rowCount + 1} ) {
+		margin-top: $vertical-gutter;
+	}
+
+	> *:not(:nth-child( #{$rowCount}n + 1 )) {
+		clear: none;
+	}
+
+	> *:nth-child( #{$rowCount}n + 1 ) {
+		clear: left;
+	}
+
+
+}
+

@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" {{site.language_attributes}}>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>{{function('wp_title')}}</title>
+
+    <script>
+      var themeVars = {
+        siteUrl: "{{ site.url }}",
+        themeLink: "{{ theme.link }}"
+      }
+    </script>
+
+    {{ function('wp_head') }}
+
+    {% block headClose %}{% endblock %}
+
+  </head>
+  <body class="{{ bodyClasses }}" data-icons="{{ 'icons.svg' | asset_url }}">
+
+    {% block main %}{% endblock %}
+
+    {% block footerClose %}{% endblock %}
+    {{ function('wp_footer') }}
+
+  </body>
+</html>

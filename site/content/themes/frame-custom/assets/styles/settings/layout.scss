@@ -1,0 +1,10 @@
+
+$l-small: 350px;
+$l-medium: 750px;
+$l-large: 1200px;
+
+$breakpoints: (
+  sm: $l-small,
+  md: $l-medium,
+  lg: $l-large
+)

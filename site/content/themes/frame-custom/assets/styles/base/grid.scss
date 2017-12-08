@@ -1,0 +1,45 @@
+// // Base Grid layouts
+
+//     .row {
+//       @include grid-wrap;
+//     }
+
+//     .col {
+//       @include grid-item;
+//     }
+
+
+// // Create a twelve column grid layout
+
+//     $total-columns: 12;
+
+//     @for $index from 1 through $total-columns {
+//       col-#{$index} {
+//         width: percentage($index / $total-columns);
+//       }
+//     }
+
+
+//     $breakpoints: (
+//       sm: 900px,
+//       md: 1200px,
+//     )
+
+// // Create grid bases on breakpoints
+
+//     // Iterate through breakpoints map
+//     @each $name, $size in $breakpoints {
+//
+//       // apply current media breakpoint
+//       @include media('>=#{$name}') {
+
+//         // Loop through column again
+//         @for $index from 1 through $total-columns {
+//
+//           // create column item IE .col-3-md { width: 25% }
+//           .col-#{$index}-#{$name} {
+//             width: percentage( $index / $total-columns);
+//           }
+//         }
+//       }
+//     }

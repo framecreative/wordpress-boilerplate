@@ -1,0 +1,20 @@
+
+/*
+@font-face {
+	font-family: 'FrutigerLTStd-Bold';
+	src: url('../fonts/31FB73_0_0.eot');
+	src: url('../fonts/31FB73_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/31FB73_0_0.woff2') format('woff2'),
+	url('../fonts/31FB73_0_0.woff') format('woff'),
+	url('../fonts/31FB73_0_0.ttf') format('truetype');
+}
+*/
+
+
+.t-heading {
+	font-size: 2rem;
+}
+
+.t-copy {
+	@include space-vertically(1rem);
+}

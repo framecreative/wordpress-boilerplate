@@ -1,0 +1,9 @@
+
+
+{% macro icon( id, classes, alignment ) %}
+
+	<span class="o-icon{{ classes ? ' ' ~ classes }}{{ alignment ? ' icon--' ~ alignment }}">
+		<svg aria-hidden="true"><use xlink:href="#icons--{{ id }}"/></svg>
+	</span>
+
+{% endmacro %}
