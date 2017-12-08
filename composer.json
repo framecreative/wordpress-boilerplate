@@ -1,0 +1,60 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Frame\\": "site/content/themes/frame-custom/library/"
+        }
+    },
+    "repositories": [
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://plugins.frmdv.com/satispress/"
+        },
+        {
+            "type": "composer",
+            "url": "https://woocommerce.frmdv.com/satispress/"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4.0",
+        "composer/installers": "^v1.2.0",
+        "johnpbloch/wordpress": "^4.8.0",
+
+        "wpackagist-plugin/disable-comments": "*",
+        "wpackagist-plugin/imsanity": "^2.3.6",
+        "wpackagist-plugin/intuitive-custom-post-order": "^3.0.7",
+        "wpackagist-plugin/post-type-archive-links": "^1.3.1",
+        "wpackagist-plugin/timber-library": "^1.1.0",
+        "wpackagist-plugin/wordpress-seo": "^5.0.0",
+        "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "^1.2.6",
+        "wpackagist-plugin/comet-cache": "*",
+        "wpackagist-plugin/worker": "^4.2.16",
+        "wpackagist-plugin/mailgun": "^1.5.8.2",
+        "wpackagist-plugin/redirection": "^2.4",
+
+        "frame-plugin/frame-core": "^1.0.0",
+        "frame-plugin/wp-migrate-db-pro": "^1.7.0",
+        "frame-plugin/wp-migrate-db-pro-media-files": "^1.4.5",
+        "frame-plugin/advanced-custom-fields-pro": "^5.5.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "site/wordpress",
+        "installer-paths": {
+          "site/content/mu-plugins/{$name}": [
+              "type:wordpress-muplugin",
+              "wpackagist-plugin/timber-library",
+              "frame-plugin/frame-core"
+          ],
+          "site/content/plugins/{$name}": [
+              "type:wordpress-plugin"
+          ]
+        }
+    },
+    "require-dev": {
+        "filp/whoops": "^2.1",
+        "symfony/var-dumper": "^3.2"
+    }
+}
