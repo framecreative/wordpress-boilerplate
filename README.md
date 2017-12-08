@@ -2,7 +2,7 @@
 
 A starting point for modern WordPress sites, designed to be used in conjunction with Frame Creative's Hosting environment and deployment pipeline
 
-Features - WordPress
+**Features - WordPress**
 
 - :tada: Composer support for plugins, themes and packages
 - :tada: Autoloadier support and default theme autoloader
@@ -14,7 +14,7 @@ Features - WordPress
 - :tada: Extensibles models per post type via Timber's class_map
 - :tada: Virtual page templates to use via router functions
 
-Features - Front End
+**Features - Front End**
 
 - :tada: NPM / Yarn support (yarn preferred)
 - :tada: Browsersync & hot reloading via `npm start` / `yarn start`
@@ -29,9 +29,15 @@ Features - Front End
 - :tada: Auto modernizer config and build via scanning css & js files
 
 
+---
+
+
 ## First Run
 
-## Nameing conventions
+A decent amount of work has gone into first run optimisation - the project works best when using in conjunction with
+[Laravel's Homestead virtual environment](https://laravel.com/docs/5.5/homestead), installed globally and [made available globally on the CLI](https://laravel.com/docs/5.5/homestead#accessing-homestead-globally) via the bash alias
+
+### Naming conventions
 
 The setup script can take care of a LOT for you if you commit to some naming convetions.
 It's all based around a "project name", which is ideally a single word, lowercase, no spaces.
@@ -45,7 +51,7 @@ you should clone this repo into a folder of the same name
 
 ```bash
 # Example git clone
-git clone https://thisrepo mycoolwebsite
+git clone https://github.com/framedigital/wordpress-boilerplate.git mycoolwebsite
 ```
 
 you can then enter the project name into the setup.sh script when prompted
@@ -61,17 +67,26 @@ If you deviate from this naming convention then please check the following files
 
 `.env`
 
-## Pre-requisites
+### Pre-requisites
 
-`composer`
+Homestead has everything we need to serve the site, for dev locally you will need
 
-`yarn` (and node)
+- `php 5.6+`
+- `composer`
+- 'node'
+- `yarn`
 
 ## Setup / First Run
 
 ```bash
-cd path-to-this-project && bash ./setup.sh
+#Example first run
+cd ${path-to-this-project} && bash ./setup.sh
+
+# The script will prompt you for a project name before beginning
 ```
+
+---
+
 
 # Development
 
