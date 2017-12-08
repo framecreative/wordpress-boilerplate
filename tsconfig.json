@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "removeComments": false,
+        "inlineSourceMap": false,
+        "noImplicitAny": false,
+        "module": "es2015",
+        "target": "es5",
+        "lib": [ "dom", "es5", "es2015" ],
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "compileOnSave": false,
+    "exclude": [
+        "node_modules",
+        "bower_components"
+    ]
+}
