@@ -1,0 +1,51 @@
+# Example .env file, values in here will work for Local Dev on Homestead
+
+PROJECT_NAME="%%PROJECTNAME%%"
+WP_URL="http://${PROJECT_NAME}.dev"
+WP_ENV="dev"
+
+#
+# Database details
+DB_USER="homestead"
+DB_PASSWORD="secret"
+WP_DB_NAME=${PROJECT_NAME}
+# DB_HOST="localhost"
+
+# Generate your keys here: https://wordplate.github.io/salt/
+AUTH_KEY='yourrandomstring'
+SECURE_AUTH_KEY='yourrandomstring'
+LOGGED_IN_KEY='yourrandomstring'
+NONCE_KEY='yourrandomstring'
+AUTH_SALT='yourrandomstring'
+SECURE_AUTH_SALT='yourrandomstring'
+LOGGED_IN_SALT='yourrandomstring'
+NONCE_SALT='yourrandomstring'
+
+# Cache
+# WP_CACHE=false
+
+# Debugging
+# WP_DEBUG=false
+# DISABLE_WP_CRON=false
+# TEMPLATE_DEBUG = true
+
+
+# WP Migrate DB Pro License
+# WPMDB_LICENCE=""
+
+#
+# Frame Core / Plugin related details
+#
+
+# Password protect (usually for staging)
+# FC_PASSWORD_PROTECT_PASSWORD="frame"
+
+# Proxy uploads - live URL, no trailing slash
+# FC_PROXY_UPLOADS_URL="http://${PROJECT_NAME}.com/content/uploads"
+
+# Google Tag Manager ID
+# GOOGLE_TAG_ID=
+
+#
+# Project Custom ENV Vars (API keys, Auth tokens etc)
+#
