@@ -4,14 +4,14 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 
 **Features - WordPress**
 
-- :tada: Composer support for plugins, themes and packages
-- :tada: Autoloadier support and default theme autoloader
-- :tada: MU plugins autoloader from bedrock
+- :tada: [Composer support](https://getcomposer.org/) for plugins, themes and packages
+- :tada: Autoloader support and default theme namespace autoloader via Library folder
+- :tada: MU plugins autoloader [from Roots/Bedrock](https://roots.io/bedrock/docs/mu-plugins-autoloader/)
 - :tada: Dot Env for environment management
-- :tada: Twig Templating
+- :tada: [T]wig Templating](https://twig.symfony.com/doc/2.x/)
 - :tada: Basic MVC-esque theme organisation ( not true MVC, more helps with code organisation )
-- :tada: Timber library for vastly improved OOP WP experience
-- :tada: Extensibles models per post type via Timber's class_map
+- :tada: [Timber library](https://www.upstatement.com/timber/) for vastly improved OOP WP experience
+- :tada: Extensibles models per post type via [Timber's class_map](site/content/themes/frame-custom/library/Setup/Structure#L24-L33)
 - :tada: Virtual page templates to use via router functions
 
 **Features - Front End**
@@ -26,7 +26,7 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 - :tada: Auto removal of console.log statements in production builds
 - :tada: CSS autoprefixer and minification on production builds
 - :tada: SVG spritesheet generation, minification and lazyloading
-- :tada: Auto modernizer config and build via scanning css & js files
+- :tada: Automatic modernizer builds, via scanning the css & js files to determine required tests
 
 
 ---
