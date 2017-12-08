@@ -3,28 +3,30 @@
 A starting point for modern WordPress sites, designed to be used in conjunction with Frame Creative's Hosting environment and deployment pipeline
 
 Features - WordPress
-:tada: - Composer support for plugins, themes and packages
-:tada: - Autoloadier support and default theme autoloader
-:tada: - MU plugins autoloader from bedrock
-:tada: - Dot Env for environment management
-:tada: - Twig Templating
-:tada: - Basic MVC-esque theme organisation ( not true MVC, more helps with code organisation )
-:tada: - Timber library for vastly improved OOP WP experience
-:tada: - Extensibles models per post type via Timber's class_map
-:tada: - Virtual page templates to use via router functions
+
+- :tada: Composer support for plugins, themes and packages
+- :tada: Autoloadier support and default theme autoloader
+- :tada: MU plugins autoloader from bedrock
+- :tada: Dot Env for environment management
+- :tada: Twig Templating
+- :tada: Basic MVC-esque theme organisation ( not true MVC, more helps with code organisation )
+- :tada: Timber library for vastly improved OOP WP experience
+- :tada: Extensibles models per post type via Timber's class_map
+- :tada: Virtual page templates to use via router functions
 
 Features - Front End
-:tada: - NPM / Yarn support (yarn preferred)
-:tada: - Browsersync & hot reloading via `npm start` / `yarn start`
-:tada: - Support for ES-6 / ES-2016 via Webpack & Babel
-:tada: - Support for ES-6 Modules & `import` statments
-:tada: - Support for SASS / SCSS via node-sass
-:tada: - Auto generation of source maps ( js & css )
-:tada: - Auto hard asset-reving for cache invalidation in production builds (js & css)
-:tada: - Auto removal of console.log statements in production builds
-:tada: - CSS autoprefixer and minification on production builds
-:tada: - SVG spritesheet generation, minification and lazyloading
-:tada: - Auto modernizer config and build via scanning css & js files
+
+- :tada: NPM / Yarn support (yarn preferred)
+- :tada: Browsersync & hot reloading via `npm start` / `yarn start`
+- :tada: Support for ES-6 / ES-2016 via Webpack & Babel
+- :tada: Support for ES-6 Modules & `import` statments
+- :tada: Support for SASS / SCSS via node-sass
+- :tada: Auto generation of source maps ( js & css )
+- :tada: Auto hard asset-reving for cache invalidation in production builds (js & css)
+- :tada: Auto removal of console.log statements in production builds
+- :tada: CSS autoprefixer and minification on production builds
+- :tada: SVG spritesheet generation, minification and lazyloading
+- :tada: Auto modernizer config and build via scanning css & js files
 
 
 ## First Run
@@ -38,12 +40,14 @@ It's all based around a "project name", which is ideally a single word, lowercas
 # Example project name
 mycoolwebsite
 ```
+
 you should clone this repo into a folder of the same name
 
 ```bash
 # Example git clone
 git clone https://thisrepo mycoolwebsite
 ```
+
 you can then enter the project name into the setup.sh script when prompted
 
 When configuring homestead or your dev environment you should aim for the project name
