@@ -1,5 +1,5 @@
 {
-  "name": "PROJECTNAME",
+  "name": "%%PROJECTNAME%%",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -13,7 +13,7 @@
   "config": {
     "assetSource": "site/content/themes/frame-custom/assets/",
     "assetDist": "site/content/themes/frame-custom/built/",
-    "devUrl": "PROJECTNAME.dev",
+    "devUrl": "%%PROJECTNAME%%.dev",
     "themeFolder": "site/content/themes/frame-custom"
   },
   "dependencies": {
