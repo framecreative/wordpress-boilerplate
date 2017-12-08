@@ -54,7 +54,7 @@ you should clone this repo into a folder of the same name
 git clone https://github.com/framedigital/wordpress-boilerplate.git mycoolwebsite
 ```
 
-you can then enter the project name into the setup.sh script when prompted
+Enter the project name into the [setup.sh script](#setup--first-run-helper-script) when prompted
 
 When configuring homestead or your dev environment you should aim for the project name
 as the website url and db name - `mycooolwebsite.dev` and `mycoolwebsite` respectively.
@@ -73,7 +73,7 @@ Homestead has everything we need to serve the site, for dev locally you will nee
 
 - `php 5.6+`
 - `composer`
-- 'node'
+- `node`
 - `yarn`
 
 ### Setup / First Run helper script
@@ -106,7 +106,11 @@ We recommend ACF Pro for custom fields / content, and Gravity Forms for form dis
 
 Anything you can install with Yarn / NPM is up for grabs!
 
-Webpack will create a minified bundle for any JS file in the root `scripts` directory of the theme, so if you want to split your code into multiple bundles then simple create multiple files and enqueue them in wordpress accordingly - be sure to use the [assets helper class when enqueueing](site/content/themes/frame-custom/library/Setup/Frontend.php#L57-L69) to take advantage of the hard asset-revving for cache busting.
+Webpack will create a minified bundle for any JS file in the root `scripts` directory of the theme, so if you want to split your code into multiple bundles then create multiple files, only `import` what you need, and enqueue them in wordpress accordingly.
+
+When enqueueing assets, be sure to use the [assets helper class when enqueueing](site/content/themes/frame-custom/library/Setup/Frontend.php#L57-L69) to take advantage of the hard asset-revving for cache busting.
+
+Because this uses manifest.json and file name based versioning, it's safe to set really long expire headers on your assets, perfect if you're serving them via a CDN like cloudfront as you don't need to bother with invalidating the old file :boom:
 
 ### Live reload / Browsersync / General Dev kick off
 
