@@ -1,0 +1,73 @@
++-----------------------------------------------------+--------------------------------------+---------+
+| title                                               | name                                 | version |
++-----------------------------------------------------+--------------------------------------+---------+
+| Admin Columns Pro                                   | admin-columns-pro                    | 4.1     |
+| Admin Columns Pro - Advanced Custom Fields (ACF)    | cac-addon-acf                        | 2.1     |
+| Admin Columns Pro - WooCommerce                     | cac-addon-woocommerce                | 2.2     |
+| Advanced Ads                                        | advanced-ads                         | 1.8.17  |
+| Advanced Ads Pro                                    | advanced-ads-pro                     | 2.0.2   |
+| Advanced Ads – Responsive Ads                       | advanced-ads-responsive              | 1.6.1   |
+| Advanced Ads – Sticky Ads                           | advanced-ads-sticky-ads              | 1.7     |
+| Advanced Custom Fields: Gravity Forms Field         | Gravity-Forms-ACF-Field-master       | 1.1.0   |
+| Advanced Custom Fields PRO                          | advanced-custom-fields-pro           | 5.6.7   |
+| Amazon Web Services                                 | amazon-web-services                  | 1.0.4   |
+| Chronosly                                           | chronosly                            | 2.4.8   |
+| Comet Cache Pro                                     | comet-cache-pro                      | 170220  |
+| Companion Auto Update                               | companion-auto-update                | 2.9.6   |
+| Contact Form DB                                     | contact-form-7-to-database-extension | 2.10.34 |
+| Email Notifications for WP Security Audit Log       | email-notifications-wsal             | 2.2.0   |
+| EventON                                             | eventON                              | 2.6     |
+| EventON - Event Lists                               | eventon-event-lists                  | 0.8     |
+| EventON - Event Slider                              | eventon-event-slider                 | 1.0.4   |
+| EventON - Full cal                                  | eventon-full-cal                     | 1.1.4   |
+| EventON - Lists and Items                           | eventon-lists-items                  | 0.4     |
+| EventON - Weekly View                               | eventon-weekly-view                  | 1.0.7   |
+| External DB for WP Security Audit Log               | external-db-wsal                     | 1.2.0   |
+| F / R / A / M / E / Core                            | frame-core                           | 1.1.0   |
+| Fetch Instagram Posts                               | fetch-insta-posts                    | 1.1.3   |
+| Fetch Twitter Posts                                 | fetch-twitter-posts                  | 1.0.2   |
+| Formidable Default Templates                        | formidable-default-templates         | 1.2.1   |
+| Formidable Forms                                    | formidable                           | 2.05.07 |
+| GitHub Updater                                      | github-updater                       | 7.4.3   |
+| Gravity Forms                                       | gravityforms                         | 2.2.5   |
+| Gravity Forms - Form Integrator                     | gravityforms-form-integrator         | 2.3.4   |
+| Gravity Forms Campaign Monitor Add-On               | gravityformscampaignmonitor          | 3.5     |
+| Gravity Forms Inspirations CC Processing            | gravityforms-inspirations-cc         | 1.0     |
+| Gravity Forms Logging Add-On                        | gravityformslogging                  | 1.3     |
+| Gravity Forms MailChimp Add-On                      | gravityformsmailchimp                | 4.2     |
+| Gravity Forms User Registration Add-On              | gravityformsuserregistration         | 3.7     |
+| GravityView - Gravity Forms Import Entries          | gravityview-importer                 | 1.3.2   |
+| Intuitive Custom Post Order                         | intuitive-custom-post-order          | 3.1.0   |
+| Media Library Categories Premium                    | wp-media-library-categories          | 2.1.2   |
+| Ninja Popups                                        | arscode-ninja-popups                 | 4.5.2   |
+| Polylang for WooCommerce                            | polylang-wc                          | 0.9.1   |
+| Polylang Pro                                        | polylang-pro                         | 2.2.6   |
+| Reports for WP Security Audit Log                   | reports-wsal                         | 2.0.9   |
+| S3 Uploads                                          | S3-Uploads-1.1.0                     | 1.1.0   |
+| SatisPress                                          | satispress-develop                   | 0.2.2   |
+| Search for WP Security Audit Log                    | search-wsal                          | 1.1.5   |
+| SearchWP                                            | searchwp                             | 2.8.17  |
+| SearchWP LIKE Terms                                 | searchwp-like                        | 2.4.4.1 |
+| SearchWP Term Synonyms                              | searchwp-term-synonyms               | 2.4.11  |
+| SearchWP WooCommerce Integration                    | searchwp-woocommerce                 | 1.1.15  |
+| Slider Revolution                                   | revslider                            | 5.4.6.4 |
+| The Events Calendar                                 | the-events-calendar                  | 4.6.7   |
+| The Events Calendar PRO                             | events-calendar-pro                  | 4.4.19  |
+| Update Control                                      | update-control                       | 1.5     |
+| Users Sessions Management for WP Security Audit Log | users-sessions-management-wsal       | 1.0.3   |
+| WP All Export Pro                                   | wp-all-export-pro                    | 1.4.7   |
+| WP All Import - ACF Add-On                          | wpai-acf-add-on                      | 3.1.5   |
+| WP All Import - WooCommerce Add-On Pro              | wpai-woocommerce-add-on              | 2.3.5   |
+| WP All Import Pro                                   | wp-all-import-pro                    | 4.5.0   |
+| WP Background Processing                            | wp-background-processing             | 1.0     |
+| WPBakery Page Builder                               | js_composer                          | 5.4.2   |
+| WP Crontrol                                         | wp-crontrol                          | 1.6.2   |
+| WP Migrate DB Pro                                   | wp-migrate-db-pro                    | 1.8.1   |
+| WP Migrate DB Pro Media Files                       | wp-migrate-db-pro-media-files        | 1.4.9   |
+| WP Migrate DB Pro Multisite Tools                   | wp-migrate-db-pro-multisite-tools    | 1.2     |
+| WP Offload S3                                       | amazon-s3-and-cloudfront-pro         | 1.5.1   |
+| WP Offload S3 - Assets Addon (Deprecated)           | amazon-s3-and-cloudfront-assets      | 1.2.6   |
+| WP Offload S3 - Assets Pull Addon                   | amazon-s3-and-cloudfront-assets-pull | 1.0     |
+| WP Security Audit Log                               | wp-security-audit-log                | 2.6.9.1 |
+| Yoast SEO Premium                                   | wordpress-seo-premium                | 5.8     |
++-----------------------------------------------------+--------------------------------------+---------+
