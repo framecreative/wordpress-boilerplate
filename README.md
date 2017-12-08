@@ -76,7 +76,7 @@ Homestead has everything we need to serve the site, for dev locally you will nee
 - 'node'
 - `yarn`
 
-## Setup / First Run
+### Setup / First Run helper script
 
 ```bash
 #Example first run
@@ -88,9 +88,40 @@ cd ${path-to-this-project} && bash ./setup.sh
 ---
 
 
-# Development
+## Development
 
-## Renaming the theme / changing themes
+
+### Installing Plugins
+
+Plugins from the WordPress repository are available via the `wpackagist-plugin` vendor - eg: `composer require wpackagist-plugin/placekitten`
+
+For paid 3rd party plugins avialable via Frame's hosted composer repositories please see [our included list](frame-composer-plugins.txt)
+
+You will require a auth.json file to access this password protected repository - Frame Creative will provide you with these credentials if necessary - please avoid checking them into any public repository
+
+We recommend ACF Pro for custom fields / content, and Gravity Forms for form display and processing, both of which are available via frame-plugins
+
+
+### Installing JS Dependencies
+
+Anything you can install with Yarn / NPM is up for grabs!
+
+Webpack will create a minified bundle for any JS file in the root `scripts` directory of the theme, so if you want to split your code into multiple bundles then simple create multiple files and enqueue them in wordpress accordingly - be sure to use the [assets helper class when enqueueing](site/content/themes/frame-custom/library/Setup/Frontend.php#L57-L69) to take advantage of the hard asset-revving for cache busting.
+
+### Live reload / Browsersync / General Dev kick off
+
+Navigate to the project root in your CLI and run
+
+```bash
+yarn start
+```
+
+This will kick off the watch / rebuild process, and start a proxied browsersync connection to whatever url is set in package.json
+
+Visit `http://localhost:3000` to access the site and use browser sync
+
+
+### Renaming the theme / changing themes
 
 Feel free to rename the theme, or swap it out for another starter, the following paths may need to be edited, or you can bail on our front-end build processes if you want - I'm not your supervisor :information_desk_person:
 
@@ -109,48 +140,7 @@ Feel free to rename the theme, or swap it out for another starter, the following
   - autoload config
 
 
-## Using Typescript
-
-If using TypeScript, rename app.js to app.ts. The TypeScript compiler (tsc) will then handle the file and then pipe through the standard js pipeline (Babel, Uglify etc).
-
-To take advantage of TypeScript autocomplete + checking with various libraries, install the corresponding TypeScript type definition file by running one of the following:
-
-`npm install -D @types/jquery`
-`npm install -D @types/lodash`
-`npm install -D @types/underscore`
-
-Many type definitions are available. See them all at https://github.com/DefinitelyTyped/DefinitelyTyped .
-
-## Installing Plugins
-
-Plugins from the WordPress repository are available via the `wpackagist-plugin` vendor - eg: `composer require wpackagist-plugin/placekitten`
-
-For paid 3rd party plugins avialable via Frame's hosted composer repositories please see [our included list](frame-composer-plugins.txt)
-
-You will require a auth.json file to access this password protected repository - Frame Creative will provide you with these credentials if necessary - please avoid checking them into any public repository
-
-We recommend ACF Pro for custom fields / content, and Gravity Forms for form display and processing, both of which are available via frame-plugins
-
-## Installing JS Dependencies
-
-Anything you can install with Yarn / NPM is up for grabs!
-
-Webpack will create a minified bundle for any JS file in the root `scripts` directory of the theme, so if you want to split your code into multiple bundles then simple create multiple files and enqueue them in wordpress accordingly - be sure to use the [assets helper class when enqueueing](site/content/themes/frame-custom/library/Setup/Frontend.php#L57-L69) to take advantage of the hard asset-revving for cache busting.
-
-## Live reload / Browsersync / General Dev kick off
-
-Navigate to the project root in your CLI and run
-
-```bash
-yarn start
-```
-
-This will kick off the watch / rebuild process, and start a proxied browsersync connection to whatever url is set in package.json
-
-Visit `http://localhost:3000` to access the site and use browser sync
-
-
-## Homestead and WP CLI
+### Homestead and WP CLI
 
 If you have homestead installed globally then you can take advantage of WP CLI's aliases in a very easy manner
 
@@ -175,6 +165,19 @@ Then you can execute WP CLI commands from your machine using the aliases
 # Good test example
 wp @dev plugin list
 ```
+
+
+### Using Typescript
+
+If using TypeScript, rename app.js to app.ts. The TypeScript compiler (tsc) will then handle the file and then pipe through the standard js pipeline (Babel, Uglify etc).
+
+To take advantage of TypeScript autocomplete + checking with various libraries, install the corresponding TypeScript type definition file by running one of the following:
+
+`npm install -D @types/jquery`
+`npm install -D @types/lodash`
+`npm install -D @types/underscore`
+
+Many type definitions are available. See them all at https://github.com/DefinitelyTyped/DefinitelyTyped .
 
 
 
