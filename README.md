@@ -54,13 +54,17 @@ When configuring homestead or your dev environment you should aim for the projec
 as the website url and db name - `mycooolwebsite.dev` and `mycoolwebsite` respectively.
 
 If you deviate from this naming convention then please check the following files to ensure the details are correct
+
 `package.json`
+
 `wp-cli.yml`
+
 `.env`
 
 ## Pre-requisites
 
 `composer`
+
 `yarn` (and node)
 
 ## Setup / First Run
