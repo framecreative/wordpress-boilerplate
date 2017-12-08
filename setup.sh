@@ -34,23 +34,25 @@ if [ $name == '' ]; then
     exit 1;
 fi
 
+echo "";
+echo "";
 echo ${LINE};
 echo "";
-echo "${TAG} Find / replace";
+echo "${TAG} ${GREEN}Find / replace"${NC};
 echo "";
 echo ${LINE}
 
 echo "";
-echo -n "  :: Project name setup - find/replace in .php files";
+echo -n ":: ${YELLOW}Project name setup${NC} - find/replace in .php files";
 find ${SCRIPTPATH}/ -name '*.php' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
-echo -n "  :: Project name setup - find/replace in .json files";
+echo -n ":: ${YELLOW}Project name setup${NC} - find/replace in .json files";
 find ${SCRIPTPATH}/ -name '*.json' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
-echo -n "  :: Project name setup - find/replace in env file";
+echo -n ":: ${YELLOW}Project name setup${NC} - find/replace in env file";
 find ${SCRIPTPATH}/ -name 'env' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
-echo -n "  :: Project name setup - find/replace in .yml files";
+echo -n ":: ${YELLOW}Project name setup${NC} - find/replace in .yml files";
 find ${SCRIPTPATH}/ -name '*.yml' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 find ${SCRIPTPATH}/ -name '*.yaml' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
@@ -63,7 +65,7 @@ echo "";
 echo ${LINE}
 
 echo -n "  :: Setting up .env file"
-#cp env .env
+cp env .env
 echo "";
 echo ""
 
@@ -76,7 +78,7 @@ echo ${LINE}
 echo "";
 echo ""
 
-#composer install --prefer-source --ignore-platform-reqs
+composer install --prefer-source --ignore-platform-reqs
 
 echo "";
 echo ""
@@ -89,11 +91,11 @@ echo ${LINE}
 echo "";
 echo ""
 
-#yarn && yarn build
+yarn && yarn build
 
 
 echo "";
-echo "${GREEN}:: Setup Complete 🔥 🔥"
+echo "🔥 🔥 ${GREEN}Setup Complete 🔥 🔥"
 echo "";
 echo "";
 echo "${NC}Some tasks still required for setup - see README.md for more info"
