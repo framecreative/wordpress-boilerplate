@@ -1,5 +1,3 @@
-
-
 function do_setup(){
 
 set -e
@@ -36,8 +34,6 @@ if [ $name == '' ]; then
     exit 1;
 fi
 
-exit 0;
-
 echo ${LINE};
 echo "";
 echo "${TAG} Find / replace";
@@ -46,17 +42,17 @@ echo ${LINE}
 
 echo "";
 echo -n "  :: Project name setup - find/replace in .php files";
-find ${SCRIPTPATH}/ -name '*.php' #-exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
+find ${SCRIPTPATH}/ -name '*.php' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
 echo -n "  :: Project name setup - find/replace in .json files";
-find ${SCRIPTPATH}/ -name '*.json' #-exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
+find ${SCRIPTPATH}/ -name '*.json' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
 echo -n "  :: Project name setup - find/replace in env file";
-find ${SCRIPTPATH}/ -name 'env' #-exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
+find ${SCRIPTPATH}/ -name 'env' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
 echo -n "  :: Project name setup - find/replace in .yml files";
-find ${SCRIPTPATH}/ -name '*.yml' #-exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
-find ${SCRIPTPATH}/ -name '*.yaml' #-exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
+find ${SCRIPTPATH}/ -name '*.yml' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
+find ${SCRIPTPATH}/ -name '*.yaml' -exec sed -i "s/%%PROJECTNAME%%/${name}/g" {} \;
 echo "";
 echo "";
 
@@ -97,17 +93,19 @@ echo ""
 
 
 echo "";
-echo "${GREEN}:: Setup Complete 🔥🔥"
+echo "${GREEN}:: Setup Complete 🔥 🔥"
 echo "";
 echo "";
 echo "${NC}Some tasks still required for setup - see README.md for more info"
 echo "";
+echo "- Read hacker news while this bash script makes you look busy 💁"
 echo "- replace salts in .env with real ones - see http://wordplate.github.io/salt/"
 echo "- Setup homestead.yml entry for this site"
 echo "- Edit wp-cli.yml if your homestead vagrant mount path is different"
 echo "- Create Homestead ssh config (see README.md)"
 echo "- Create database named \"${name}\" if you haven't already"
-echo "- Read hacker news while this bash script make you look busy 💁"
 echo "- Actually develop the site 📈"
 
 }
+
+do_setup
