@@ -1,0 +1,7 @@
+path: site/wordpress
+url: %%PROJECTNAME%%.dev
+
+# Alias for homestead dev environment
+
+@dev:
+  ssh: vagrant@homstead.dev/home/vagrant/code/%%PROJECTNAME%%
