@@ -8,7 +8,7 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 - :tada: Autoloader support and default theme namespace autoloader via Library folder
 - :tada: MU plugins autoloader [from Roots/Bedrock](https://roots.io/bedrock/docs/mu-plugins-autoloader/)
 - :tada: Dot Env for environment management
-- :tada: [T]wig Templating](https://twig.symfony.com/doc/2.x/)
+- :tada: [Twig Templating](https://twig.symfony.com/doc/2.x/)
 - :tada: Basic MVC-esque theme organisation ( not true MVC, more helps with code organisation )
 - :tada: [Timber library](https://www.upstatement.com/timber/) for vastly improved OOP WP experience
 - :tada: Extensibles models per post type via [Timber's class_map](site/content/themes/frame-custom/library/Setup/Structure#L24-L33)
@@ -26,7 +26,8 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 - :tada: Auto removal of console.log statements in production builds
 - :tada: CSS autoprefixer and minification on production builds
 - :tada: SVG spritesheet generation, minification and lazyloading
-- :tada: Automatic modernizer builds, via scanning the css & js files to determine required tests
+- :tada: Automatic modernizer builds, via scanning the css & js files to determine required testshomestead up
+
 
 
 ---
@@ -97,7 +98,7 @@ Plugins from the WordPress repository are available via the `wpackagist-plugin` 
 
 For paid 3rd party plugins avialable via Frame's hosted composer repositories please see [our included list](frame-composer-plugins.txt)
 
-You will require a auth.json file to access this password protected repository - Frame Creative will provide you with these credentials if necessary - please avoid checking them into any public repository
+You will need an auth.json file to access this password protected repository - Frame Creative will provide you with these credentials if necessary - please avoid checking them into any public repository
 
 We recommend ACF Pro for custom fields / content, and Gravity Forms for form display and processing, both of which are available via frame-plugins
 
