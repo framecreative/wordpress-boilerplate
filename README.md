@@ -102,6 +102,11 @@ You will need an auth.json file to access this password protected repository - F
 
 We recommend ACF Pro for custom fields / content, and Gravity Forms for form display and processing, both of which are available via frame-plugins
 
+```bash
+# Example: Install gravity forms via composer
+# Run from project root (where composer.json / auth.json are)
+composer require frame-plugin/gravityforms
+```
 
 ### Installing JS Dependencies
 
