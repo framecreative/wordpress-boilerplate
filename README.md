@@ -11,7 +11,7 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 - :tada: [Twig Templating](https://twig.symfony.com/doc/2.x/)
 - :tada: Basic MVC-esque theme organisation ( not true MVC, more helps with code organisation )
 - :tada: [Timber library](https://www.upstatement.com/timber/) for vastly improved OOP WP experience
-- :tada: Extensibles models per post type via [Timber's class_map](site/content/themes/frame-custom/library/Setup/Structure#L24-L33)
+- :tada: Extensible models per post type via [Timber's class_map](site/content/themes/frame-custom/library/Setup/Structure#L24-L33)
 - :tada: Virtual page templates to use via router functions
 
 **Features - Front End**
@@ -26,7 +26,7 @@ A starting point for modern WordPress sites, designed to be used in conjunction 
 - :tada: Auto removal of console.log statements in production builds
 - :tada: CSS autoprefixer and minification on production builds
 - :tada: SVG spritesheet generation, minification and lazyloading
-- :tada: Automatic modernizer builds, via scanning the css & js files to determine required testshomestead up
+- :tada: Automatic modernizer builds, via scanning the css & js files to determine required tests
 
 
 
@@ -76,6 +76,8 @@ Homestead has everything we need to serve the site, for dev locally you will nee
 - `composer`
 - `node`
 - `yarn`
+
+Laravel's [valet](https://laravel.com/docs/5.6/valet) is also a great way to get up and running, though it's a little less solid now that homebrew has changed its approach to PHP packages.
 
 ### Setup / First Run helper script
 
