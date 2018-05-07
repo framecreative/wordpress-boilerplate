@@ -1,15 +1,39 @@
 # Example .env file, values in here will work for Local Dev on Homestead
+# Make a copy named '.env' to get started
+# ==============================================================================
 
-PROJECT_NAME="%%PROJECTNAME%%"
-WP_URL="http://${PROJECT_NAME}.dev"
-WP_ENV="dev"
+WP_URL="http://%%PROJECTNAME%%.test"
+WP_ENV="dev" # Available: staging / live
 
-#
 # Database details
 DB_USER="homestead"
 DB_PASSWORD="secret"
-WP_DB_NAME=${PROJECT_NAME}
+WP_DB_NAME="%%PROJECTNAME%%"
+
+# Set a different DB Host
 # DB_HOST="localhost"
+
+# ==============================================================================
+# Debugging & Caching
+# ==============================================================================
+
+WP_DEBUG=true # show errors
+TEMPLATE_DEBUG=true # this displays context variables in your views
+# DISABLE_WP_CRON=false
+# WP_CACHE=false
+
+
+# ==============================================================================
+# Plugins
+# ==============================================================================
+
+# WP Migrate DB Pro License
+# WPMDB_LICENCE=""
+
+
+# ==============================================================================
+# Salts
+# ==============================================================================
 
 # Generate your keys here: https://wordplate.github.io/salt/
 AUTH_KEY='yourrandomstring'
@@ -21,31 +45,38 @@ SECURE_AUTH_SALT='yourrandomstring'
 LOGGED_IN_SALT='yourrandomstring'
 NONCE_SALT='yourrandomstring'
 
-# Cache
-# WP_CACHE=false
 
-# Debugging
-# WP_DEBUG=false
-# DISABLE_WP_CRON=false
-# TEMPLATE_DEBUG = true
-
-
-# WP Migrate DB Pro License
-# WPMDB_LICENCE=""
-
-#
-# Frame Core / Plugin related details
-#
+# ==============================================================================
+# Frame Core
+# ==============================================================================
 
 # Password protect (usually for staging)
 # FC_PASSWORD_PROTECT_PASSWORD="frame"
 
 # Proxy uploads - live URL, no trailing slash
-# FC_PROXY_UPLOADS_URL="http://${PROJECT_NAME}.com/content/uploads"
+# Note: Proxy uploads don't work with Laravel Valet WordPress Driver
+# FC_PROXY_UPLOADS_URL="http://%%PROJECTNAME%%.com/content/uploads"
 
-# Google Tag Manager ID
-# GOOGLE_TAG_ID=
+# Set as true if we have an agreement to maintain the website (perform updates, maintenance etc).
+# FC_SITE_MAINTAINED="true"
 
-#
-# Project Custom ENV Vars (API keys, Auth tokens etc)
+# Add the necessary Google Tag Manager embed code to the page <head> and <body>
+# FC_GTM_ID=""
+
+# This activates a content freeze so only the Frame Admin can login to the CMS.
+# FC_CONTENT_FREEZE="true"
+
+
+# ==============================================================================
+# Mail
+# ==============================================================================
+
+# values  : string (smtp details)
+# default : false / empty string
+# FC_SMTP_HOST=""
+# FC_SMTP_USER=""
+# FC_SMTP_PASSWORD=""
+# FC_SMTP_PORT=""
+# FC_SMTP_FROM=""
+# FC_SMTP_FROM_NAME=""
 #
